@@ -24,3 +24,6 @@ hs_err_pid*
 /administration.iml
 *.iml
 .idea
+node_moduless
+*lock.json
+*lock

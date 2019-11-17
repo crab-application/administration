@@ -1,0 +1,26 @@
+
+<section class="feature-flipping-backoffice container-fluid">  
+
+
+
+    <menu class="main-menu col-md-2 d-none d-md-block bg-light sidebar">
+        <ul>
+            <li *ngFor="let link of links">
+                <a [routerLink]="link.path"
+                    routerLinkActive="active"
+                    [class]="link.styleClass"
+                    [routerLinkActiveOptions]="{exact:true}"
+                    [innerHTML]="link?.label"></a>
+            </li>
+            
+          
+            <div class="clear"></div>
+        </ul>
+    </menu>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4s">
+        <router-outlet></router-outlet>
+    </main>
+
+</section>
+
+
